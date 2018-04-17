@@ -1,7 +1,9 @@
-package com.example.aldo.artimanus;
+package com.example.aldo.artimanus.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.aldo.artimanus.R;
 
 public class MainActivity extends AppCompatActivity {
 
