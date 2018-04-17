@@ -6,17 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".views.LoginActivity">
 
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="151dp"
+            android:layout_weight="0.3">
+
+            <!-- esta parte la dejé con la imagen "header" porque es más ancha y corta, lo cual funciona ya que el
+                diseño de las pantallas muestra que el login tiene una imagen más grande que las demás pantallas,
+                las cuales deben de ser del tamaño del toolbar-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/header" />
+
+        </RelativeLayout>
+
+
 
     </android.support.design.widget.AppBarLayout>
 
