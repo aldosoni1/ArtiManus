@@ -43,5 +43,11 @@
         <item name="android:textColor">@android:color/white</item>
     </style>
 
+    <style name="RaisedButtonCyan" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorCyan</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
     <dimen name="edittext_textsize_login">22sp</dimen>
 </resources>

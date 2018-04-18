@@ -17,7 +17,14 @@ public class RegistroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);*/
+        showToolbar(getResources().getString(R.string.toolbar_tittle_crear_cuenta), true);
 
+    }
+    public void showToolbar(String tittle, boolean upButton){
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(tittle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
 
     }
 
