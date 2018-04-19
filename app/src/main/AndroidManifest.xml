@@ -13,25 +13,25 @@
         <activity
             android:name=".views.LoginActivity"
             android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".views.RegistroActivity"
             android:label="@string/title_activity_registro"
-            android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName=".views.LoginActivity"
-            ></activity>
-        <activity android:name=".views.SubirProductoActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.SubirProductoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.actionbar_toolbar2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".views.actionbar_toolbar2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.MenuPrincipal"></activity>
     </application>
 
 </manifest>
