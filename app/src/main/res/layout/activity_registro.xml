@@ -18,14 +18,6 @@
             android:orientation="vertical"
             android:weightSum="1">
 
-            <!-- Edité esta parte para mejorar el header, las pantallas que hagas a continuación, hazlas así
-                no incluyas la ImageView dentro de otro elementro, también utiliza la imagen hlarge, así toma
-                el tamaño exacto del "toolbar" y no es necesario editarlo manualmente-->
-
-
-
-            <!-- Tampoco es necesario añadir "android.support.v7.widget.Toolbar" con el puro Image View dentro del
-                RelativeLayout que declaras, funciona bien y automáticamente, checa en activity_login.xml-->
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">

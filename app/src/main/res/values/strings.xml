@@ -2,6 +2,7 @@
     <string name="app_name">ArtiManus</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_registro">RegistroActivity</string>
+    <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
     <string name="hint_username">Usuario</string>
     <string name="hint_password">Contraseña</string>
     <string name="hint_nombre">Nombre</string>

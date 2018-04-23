@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".views.LoginActivity">
 
-    <include layout="@layout/actionbar_toolbar"></include>
+    <include layout="@layout/activity_toolbar_login"></include>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -80,7 +80,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/text_button_login"
-                        android:theme="@style/RaisedButtonDark" />
+                        android:theme="@style/RaisedButtonDark"
+
+                        />
 
                     <Button
                         android:id="@+id/registrar"
@@ -88,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/tex_button_registrar"
                         android:theme="@style/RaisedButtonDark"
-                        android:onClick="goCreateAccount"/>
+                        />
                 </LinearLayout>
             </ScrollView>
         </LinearLayout>
