@@ -35,7 +35,7 @@
             android:theme="@style/EditTextBlack">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/nombre"
+                android:id="@+id/txtNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -49,13 +49,12 @@
             android:theme="@style/EditTextBlack">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/Apellidos"
+                android:id="@+id/txtApellidos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:hint="@string/hint_apellidos"
-                android:textAlignment="center"
-                />
+                android:textAlignment="center" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -64,7 +63,7 @@
             android:theme="@style/EditTextBlack">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/correo"
+                android:id="@+id/txtCorreo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
@@ -77,7 +76,7 @@
             android:theme="@style/EditTextBlack">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
