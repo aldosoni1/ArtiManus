@@ -13,6 +13,7 @@ import com.example.aldo.artimanus.R;
 
 public class SubirProductoActivity extends AppCompatActivity {
     ImageView imagen;
+    String rutaImagen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class SubirProductoActivity extends AppCompatActivity {
         if (resultCode == RESULT_OK){
             Uri path = data.getData();
             imagen.setImageURI(path);
+            rutaImagen = path.toString();
         }
     }
 }
