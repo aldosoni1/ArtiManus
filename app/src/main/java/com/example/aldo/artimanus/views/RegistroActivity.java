@@ -46,7 +46,7 @@ public class RegistroActivity extends AppCompatActivity {
         showToolbar(getResources().getString(R.string.toolbar_tittle_crear_cuenta), true);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.92.201/api/Usuario/")
+                .baseUrl("http://148.226.80.126/api/Usuario/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
