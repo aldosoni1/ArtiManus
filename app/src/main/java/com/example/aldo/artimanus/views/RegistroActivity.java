@@ -1,5 +1,6 @@
 package com.example.aldo.artimanus.views;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -27,7 +28,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RegistroActivity extends AppCompatActivity {
     private Retrofit retrofit;
     TextInputEditText nombre, apellidos, correoElectronico, password;
-    Button btnRegistrarse;
+    Button btnRegistrarse, btnRegresar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,14 +40,14 @@ public class RegistroActivity extends AppCompatActivity {
         correoElectronico = (TextInputEditText) findViewById(R.id.txtCorreo);
         password = (TextInputEditText) findViewById(R.id.txtPassword);
         btnRegistrarse = (Button) findViewById(R.id.btnRegistrarse);
-
+        btnRegresar = (Button) findViewById(R.id.btnRegresar);
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);*/
         showToolbar(getResources().getString(R.string.toolbar_tittle_crear_cuenta), true);
 
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://148.226.80.126/api/Usuario/")
+                .baseUrl("http://148.226.80.114/api/Usuario/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -63,6 +64,14 @@ public class RegistroActivity extends AppCompatActivity {
             }
         });
 
+        btnRegresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(RegistroActivity.this, LoginActivity.class);
+                startActivity(i);
+            }
+        });
+
 
     }
     private void RegistrarUsuario(Usuario usuario){
@@ -74,6 +83,8 @@ public class RegistroActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<ResultadoRegistrar> call, Response<ResultadoRegistrar> response) {
                 //Log.d("Completado",response.body().toString());
+                Intent i = new Intent(RegistroActivity.this, LoginActivity.class);
+                startActivity(i);
             }
 
             @Override
